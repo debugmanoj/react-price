@@ -9,9 +9,13 @@ function App() {
       user: "Single User",
       storage: "5GB Storage",
       project: "text-muted",
+      projectIcon: "fas fa-times",
       phone: "tex-muted",
+      phoneIcon: "fas fa-times",
       subdomain: "text-muted",
+      subdomainIcon: "fas fa-times",
       montlyStatus: "text-muted",
+      monthlyStatusIcon: "fas fa-times",
     },
     {
       title: "Plus",
@@ -19,9 +23,13 @@ function App() {
       user: "5 User",
       storage: "50GB Storage",
       project: "",
+      projectIcon: "fas fa-check",
       phone: "",
+      phoneIcon: "fas fa-check",
       subdomain: "",
+      subdomainIcon: "fas fa-check",
       montlyStatus: "text-muted",
+      monthlyStatusIcon: "fas fa-times",
     },
     {
       title: "Plus",
@@ -29,9 +37,13 @@ function App() {
       user: "5 User",
       storage: "50GB Storage",
       project: "",
+      projectIcon: "fas fa-check",
       phone: "",
+      phoneIcon: "fas fa-check",
       subdomain: "",
+      subdomainIcon: "fas fa-check",
       montlyStatus: "",
+      monthlyStatusIcon: "fas fa-check",
     },
   ];
   return (
@@ -39,7 +51,7 @@ function App() {
       <div className="container">
         <div className="row">
           {card.map((e, i) => {
-           return  <Card data={e} key={i} />;
+            return <Card data={e} key={i} />;
           })}
         </div>
       </div>

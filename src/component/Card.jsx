@@ -39,27 +39,27 @@ function Card(props) {
               </span>
               Community Access
             </li>
-            <li className="text-muted">
+            <li className={props.data.project}>
               <span className="fa-li">
-                <i className="fas fa-times"></i>
+                <i className={props.data.projectIcon}></i>
               </span>
               Unlimited Private Projects
             </li>
             <li className={props.data.project}>
               <span className="fa-li">
-                <i className="fas fa-times"></i>
+                <i className={props.data.phoneIcon}></i>
               </span>
               Dedicated Phone Support
             </li>
             <li className={props.data.subdomain}>
               <span className="fa-li">
-                <i className="fas fa-times"></i>
+                <i className={props.data.subdomainIcon}></i>
               </span>
               Free Subdomain
             </li>
             <li className={props.data.montlyStatus}>
               <span className="fa-li">
-                <i className="fas fa-times"></i>
+                <i className={props.data.monthlyStatusIcon}></i>
               </span>
               Monthly Status Reports
             </li>
